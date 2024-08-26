@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QSettings>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -17,6 +18,12 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    //配置保存
+    QSettings setting("config.ini", QSettings::IniFormat);
+    setting.setValue("port", ui->port_lineEdit->text());
+    setting.setValue("ip", ui->ip_lineEdit->text());
+    setting.setValue("filePath",ui->file_lineEdit->text());
+    //内存释放
     th->quit();
     th->wait();
     delete work;
@@ -24,15 +31,18 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
+//界面初始化
 void MainWindow::interfaceInitialization(){
     setWindowTitle("交流系统(客户端)");
     ui->connectOver_pushButton->setDisabled(true);
     ui->sendFile_pushButton->setDisabled(true);
-    ui->port_lineEdit->setText("8989");
-    ui->ip_lineEdit->setText("127.0.0.1");
+    //加载配置
+    QSettings setting("config.ini", QSettings::IniFormat);
+    ui->port_lineEdit->setText(setting.value("port").toString());
+    ui->ip_lineEdit->setText(setting.value("ip").toString());
+    ui->file_lineEdit->setText(setting.value("filePath").toString());
 }
-
+//程序初始化
 void MainWindow::precedureInitialization(){
     th = new QThread;
     work = new ClientWorking;
@@ -67,7 +77,13 @@ void MainWindow::precedureInitialization(){
 
     //当点击选择文件按钮
     connect(ui->choseFile_pushButton, &QPushButton::clicked, [this](){
-        QString filePath = QFileDialog::getOpenFileName(this,"选择文件",QDir::currentPath());
+        QFile file_lineEdit(ui->file_lineEdit->text());
+        QString filepath_default;
+        if(file_lineEdit.exists())
+            filepath_default = ui->file_lineEdit->text();
+        else
+            filepath_default = QDir::currentPath();
+        QString filePath = QFileDialog::getOpenFileName(this,"选择文件",filepath_default);
         if(!filePath.isEmpty()){
             ui->file_lineEdit->setText(filePath);
         }

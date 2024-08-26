@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
+#include <QSettings>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,6 +16,10 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    //配置保存
+    QSettings setting("config.ini", QSettings::IniFormat);
+    setting.setValue("port",ui->port_lineEdit->text());
+    //内存释放
     for(int i=0; i<tcpInfoList.size(); i++){
         tcpInfoList[i]->tcp->disconnect(this);//断开tcp的信号连接，以避免close tcp时触发disconnected信号，造成重复销毁
         tcpInfoList[i]->th->quit();
@@ -33,7 +38,9 @@ void MainWindow::interfaceInitialization()
 {
     setWindowTitle("交流系统(服务端)");
     ui->listenStatus_label->setText("未在监听");
-    ui->port_lineEdit->setText("8989");
+    //加载配置
+    QSettings setting("config.ini", QSettings::IniFormat);
+    ui->port_lineEdit->setText(setting.value("port").toString());
 }
 
 void MainWindow::precedureInitialization()

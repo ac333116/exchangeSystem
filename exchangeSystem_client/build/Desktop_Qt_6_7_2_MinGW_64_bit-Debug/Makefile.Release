@@ -238,7 +238,7 @@ release/moc_clientworking.cpp: ../../clientworking.h \
 		D:/QT/6.7.2/mingw_64/include/QtCore/q23utility.h \
 		release/moc_predefs.h \
 		D:/QT/6.7.2/mingw_64/bin/moc.exe
-	'D:\QT\6.7.2\mingw_64\bin\moc.exe' $(DEFINES) --include 'D:/QT/Projects/exchangeSystem/exchangeSystem(client)/exchangeSystem_client/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h' -ID:/QT/6.7.2/mingw_64/mkspecs/win32-g++ -I'D:/QT/Projects/exchangeSystem/exchangeSystem(client)/exchangeSystem_client' -ID:/QT/6.7.2/mingw_64/include -ID:/QT/6.7.2/mingw_64/include/QtWidgets -ID:/QT/6.7.2/mingw_64/include/QtGui -ID:/QT/6.7.2/mingw_64/include/QtNetwork -ID:/QT/6.7.2/mingw_64/include/QtCore -I. -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include ../../clientworking.h -o release/moc_clientworking.cpp
+	'D:\QT\6.7.2\mingw_64\bin\moc.exe' $(DEFINES) --include D:/QT/Projects/exchangeSystem/exchangeSystem_client/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/QT/6.7.2/mingw_64/mkspecs/win32-g++ -ID:/QT/Projects/exchangeSystem/exchangeSystem_client -ID:/QT/6.7.2/mingw_64/include -ID:/QT/6.7.2/mingw_64/include/QtWidgets -ID:/QT/6.7.2/mingw_64/include/QtGui -ID:/QT/6.7.2/mingw_64/include/QtNetwork -ID:/QT/6.7.2/mingw_64/include/QtCore -I. -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include ../../clientworking.h -o release/moc_clientworking.cpp
 
 release/moc_mainwindow.cpp: ../../mainwindow.h \
 		D:/QT/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
@@ -439,7 +439,7 @@ release/moc_mainwindow.cpp: ../../mainwindow.h \
 		D:/QT/6.7.2/mingw_64/include/QtNetwork/qhostaddress.h \
 		release/moc_predefs.h \
 		D:/QT/6.7.2/mingw_64/bin/moc.exe
-	'D:\QT\6.7.2\mingw_64\bin\moc.exe' $(DEFINES) --include 'D:/QT/Projects/exchangeSystem/exchangeSystem(client)/exchangeSystem_client/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h' -ID:/QT/6.7.2/mingw_64/mkspecs/win32-g++ -I'D:/QT/Projects/exchangeSystem/exchangeSystem(client)/exchangeSystem_client' -ID:/QT/6.7.2/mingw_64/include -ID:/QT/6.7.2/mingw_64/include/QtWidgets -ID:/QT/6.7.2/mingw_64/include/QtGui -ID:/QT/6.7.2/mingw_64/include/QtNetwork -ID:/QT/6.7.2/mingw_64/include/QtCore -I. -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include ../../mainwindow.h -o release/moc_mainwindow.cpp
+	'D:\QT\6.7.2\mingw_64\bin\moc.exe' $(DEFINES) --include D:/QT/Projects/exchangeSystem/exchangeSystem_client/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/QT/6.7.2/mingw_64/mkspecs/win32-g++ -ID:/QT/Projects/exchangeSystem/exchangeSystem_client -ID:/QT/6.7.2/mingw_64/include -ID:/QT/6.7.2/mingw_64/include/QtWidgets -ID:/QT/6.7.2/mingw_64/include/QtGui -ID:/QT/6.7.2/mingw_64/include/QtNetwork -ID:/QT/6.7.2/mingw_64/include/QtCore -I. -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/QT/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include ../../mainwindow.h -o release/moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -586,7 +586,17 @@ release/clientworking.o: ../../clientworking.cpp ../../clientworking.h \
 		D:/QT/6.7.2/mingw_64/include/QtCore/qvarlengtharray.h \
 		D:/QT/6.7.2/mingw_64/include/QtCore/qvariant.h \
 		D:/QT/6.7.2/mingw_64/include/QtCore/q23utility.h \
-		D:/QT/6.7.2/mingw_64/include/QtNetwork/QHostAddress
+		D:/QT/6.7.2/mingw_64/include/QtNetwork/QHostAddress \
+		D:/QT/6.7.2/mingw_64/include/QtCore/QDebug \
+		D:/QT/6.7.2/mingw_64/include/QtCore/QFile \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qfile.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qfiledevice.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/QFileInfo \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qfileinfo.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qlocale.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qtimezone.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/clientworking.o ../../clientworking.cpp
 
 release/main.o: ../../main.cpp ../../mainwindow.h \
@@ -988,7 +998,23 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/QT/6.7.2/mingw_64/include/QtNetwork/qabstractsocket.h \
 		D:/QT/6.7.2/mingw_64/include/QtNetwork/qhostaddress.h \
 		ui_mainwindow.h \
-		D:/QT/6.7.2/mingw_64/include/QtCore/QThread
+		D:/QT/6.7.2/mingw_64/include/QtCore/QThread \
+		D:/QT/6.7.2/mingw_64/include/QtCore/QFile \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qfile.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qfiledevice.h \
+		D:/QT/6.7.2/mingw_64/include/QtWidgets/QFileDialog \
+		D:/QT/6.7.2/mingw_64/include/QtWidgets/qfiledialog.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qdir.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qfileinfo.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qtimezone.h \
+		D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+		D:/QT/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
+		D:/QT/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
+		D:/QT/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		D:/QT/6.7.2/mingw_64/include/QtCore/QSettings \
+		D:/QT/6.7.2/mingw_64/include/QtCore/qsettings.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/mainwindow.o ../../mainwindow.cpp
 
 release/moc_clientworking.o: release/moc_clientworking.cpp 
